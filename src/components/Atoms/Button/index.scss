@@ -18,6 +18,10 @@
   border: 1px solid #dcdfe6;
   border-radius: 4px;
   
+  &.block {
+    display: block;
+    width: 100%;
+  }
   &:disabled {
     opacity: 0.5;
   }

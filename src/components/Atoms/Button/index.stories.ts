@@ -21,7 +21,7 @@ storiesOf('Atoms/Button', module)
     `
     )(() => {
       // Knobsの設定
-      const label = 'ボタンの種類'
+      const label = 'type'
       const options = {
         default: 'default',
         primary: 'primary',
@@ -39,12 +39,29 @@ storiesOf('Atoms/Button', module)
         template: `<Button type="${type}" @click.native="action" :disabled="${disabled}">${txt}</Button>`,
         methods: { action: action('button-clicked') },
         propsDescription: {
-          disabled: 'disabled属性'
-        },
-        info: {
-          summary: 'aaaaa',
+          type: 'ボタンの種類',
+          disabled: 'disabled属性',
+          isBlock: 'ブロック要素として扱う。デフォルトはインライン要素',
         },
         summary: 'Summary for MyComponent',
       }
     })
   )
+
+// Example
+storiesOf('Atoms/Button', module)
+.add('パターン', () => ({
+  components: { Button },
+  template:
+    `
+    <div style="margin: 20px;">
+      <Button type='default' isBlock='true'>Default</Button>
+      <Button type='primary'>Primary</Button>
+      <Button type='secondary'>Secondary</Button>
+      <Button type='success'>Succes</Button>
+      <Button type='info'>Info</Button>
+      <Button type='warning'>Warning</Button>
+      <Button type='alert'>Alert</Button>
+    </div>
+    `
+}))
