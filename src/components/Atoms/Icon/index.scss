@@ -1,0 +1,35 @@
+.icon {
+  &.--default {
+    color: #606266;
+  }
+  &.--primary {
+    color: #409eff;
+  }
+  &.--secondary {
+    color: #9B9B9B;
+  }
+  &.--success {
+    color: #1CBDB4;
+  }
+  &.--info {
+    color: #909399;
+  }
+  &.--warning {
+    color: #e6a23c;
+  }
+  &.--alert {
+    color: #f56c6c;
+  }
+  &.--xsmall {
+    font-size: 12px;
+  }
+  &.--small {
+    font-size: 16px;
+  }
+  &.--medium {
+    font-size: 20px;
+  }
+  &.--large {
+    font-size: 24px;
+  }
+}

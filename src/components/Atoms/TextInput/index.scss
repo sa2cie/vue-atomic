@@ -1,0 +1,13 @@
+.textInput {
+  width: 100%;
+  font-size: 13px;
+  padding: 0 8px;
+  border-radius: 4px;
+  height: 34px;
+  background: #FFFFFF;
+  border-color: 1px solid rgba(220,223,230,0.23);
+
+  &.--withIcon {
+    padding: 0 8px 0 30px;
+  }
+}

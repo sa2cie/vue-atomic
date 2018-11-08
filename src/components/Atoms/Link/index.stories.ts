@@ -1,19 +1,19 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { storiesOf } from '@storybook/vue'
 import { action } from '@storybook/addon-actions'
-import VueInfoAddon from 'storybook-addon-vue-info'
-import { withKnobs, text, boolean } from '@storybook/addon-knobs'
+import VueInfoAddon, { withInfo } from 'storybook-addon-vue-info'
+import { withKnobs, text, boolean } from '@storybook/addon-knobs/vue'
 import { withNotes } from '@storybook/addon-notes'
 
 // StoryComponent
 import Link from '@/components/Atoms/Link'
 
-// 基本情報
+// Usage
 storiesOf('Atoms/Link', module)
   .addDecorator(VueInfoAddon)
   .addDecorator(withKnobs)
   .add(
-    '基本情報',
+    'Usage',
     withNotes(
       `
       sample text

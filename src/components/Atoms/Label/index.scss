@@ -1,0 +1,83 @@
+.label {
+  display: inline-block;
+  letter-spacing: 0;
+  font-weight: bold;
+  &.--default {
+    background: #606266;
+    color: #FFFFFF;
+  }
+  &.--primary {
+    background: #409eff;
+    color: #FFFFFF;
+  }
+  &.--secondary {
+    background: #9B9B9B;
+  }
+  &.--success {
+    background: #1CBDB4;
+    color: #FFFFFF;
+  }
+  &.--info {
+    background: #909399;
+  }
+  &.--warning {
+    background: #e6a23c;
+    color: #FFFFFF;
+  }
+  &.--alert {
+    background: #f56c6c;
+    color: #FFFFFF;
+  }
+  &.--xsmall {
+    font-size: 8px;
+    padding: 5px 8px;
+  }
+  &.--small {
+    font-size: 10px;
+    padding: 5px 8px;
+  }
+  &.--medium {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+  &.--large {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+}
+
+.icon {
+  &.--default {
+    color: #606266;
+  }
+  &.--primary {
+    color: #409eff;
+  }
+  &.--secondary {
+    color: #9B9B9B;
+  }
+  &.--success {
+    color: #1CBDB4;
+  }
+  &.--info {
+    color: #909399;
+  }
+  &.--warning {
+    color: #e6a23c;
+  }
+  &.--alert {
+    color: #f56c6c;
+  }
+  &.--xsmall {
+    font-size: 12px;
+  }
+  &.--small {
+    font-size: 16px;
+  }
+  &.--medium {
+    font-size: 20px;
+  }
+  &.--large {
+    font-size: 24px;
+  }
+}

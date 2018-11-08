@@ -2,19 +2,19 @@
 import { storiesOf } from '@storybook/vue'
 
 import { action } from '@storybook/addon-actions'
-import VueInfoAddon from 'storybook-addon-vue-info'
-import { withKnobs, text, select } from '@storybook/addon-knobs'
+import VueInfoAddon, { withInfo } from 'storybook-addon-vue-info'
+import { withKnobs, text, select } from '@storybook/addon-knobs/vue'
 import { withNotes } from '@storybook/addon-notes'
 
 // StoryComponent
 import Txt from '@/components/Atoms/Txt'
 
-// 基本情報
+// Usage
 storiesOf('Atoms/Txt', module)
   .addDecorator(VueInfoAddon)
   .addDecorator(withKnobs)
   .add(
-    '基本情報',
+    'Usage',
     withNotes(
       `
       sample text

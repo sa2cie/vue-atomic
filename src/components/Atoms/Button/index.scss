@@ -13,52 +13,101 @@
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  padding: 12px 20px;
-  font-size: 14px;
   border: 1px solid #dcdfe6;
   border-radius: 4px;
-  
-  &.block {
-    display: block;
-    width: 100%;
+
+  /* ===================
+  Button - Size
+  =================== */
+  &.--small {
+    padding: 6px 10px;
+    font-size: 10px;
   }
+
+  &.--medium {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  &.--large {
+    padding: 16px 24px;
+    font-size: 18px;
+  }
+
+  /* ===================
+  Button - Theme
+  =================== */
+  &.--default {
+    background: #fff;
+    border-color: #dcdfe6;
+    color: #606266;
+  }
+
+  &.--primary {
+    color: #fff;
+    background-color: #409eff;
+    border-color: #409eff;
+  }
+
+  &.--success {
+    color: #fff;
+    background-color: #1CBDB4;
+    border-color: #1CBDB4;
+  }
+
+  &.--info {
+    color: #fff;
+    background-color: #909399;
+    border-color: #909399;
+  }
+
+  &.--warning {
+    color: #fff;
+    background-color: #e6a23c;
+    border-color: #e6a23c;
+  }
+
+  &.--alert {
+    color: #fff;
+    background-color: #f56c6c;
+    border-color: #f56c6c;
+  }
+
+  &.--circle {
+    border: none;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    padding: 0;
+  }
+
+  &.--transparent {
+    border: none;
+    background-color: transparent;
+
+    &.--medium {
+      padding: 3px 8px;
+    }
+
+    &.--success {
+      color: #1CBDB4;
+    }
+  }
+  
+  &.--inline {
+    display: inline;
+  }
+
+  &.--inline-block {
+    display: inline-block;
+  }
+
+  &.--block {
+    display: block;
+  }
+
   &:disabled {
     opacity: 0.5;
   }
-}
-
-.default {
-  background: #fff;
-  border-color: #dcdfe6;
-  color: #606266;
-}
-
-.primary {
-  color: #fff;
-  background-color: #409eff;
-  border-color: #409eff;
-}
-
-.success {
-  color: #fff;
-  background-color: #67c23a;
-  border-color: #67c23a;
-}
-
-.info {
-  color: #fff;
-  background-color: #909399;
-  border-color: #909399;
-}
-
-.warning {
-  color: #fff;
-  background-color: #e6a23c;
-  border-color: #e6a23c;
-}
-
-.alert {
-  color: #fff;
-  background-color: #f56c6c;
-  border-color: #f56c6c;
 }

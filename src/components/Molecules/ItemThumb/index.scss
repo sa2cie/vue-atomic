@@ -1,0 +1,10 @@
+.itemThumb {
+  width: 100%;
+  position: relative;
+
+  &__label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}

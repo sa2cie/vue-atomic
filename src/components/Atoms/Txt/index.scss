@@ -3,4 +3,17 @@
     line-height: 1.38;
     white-space: pre-wrap;
     text-align: justify;
+    margin: 0;
+
+    &.--secondary {
+        color: #9B9B9B;
+    }
+
+    &.--medium {
+        font-size: 14px;
+    }
+    
+    &.--small {
+        font-size: 12px;
+    }
 }

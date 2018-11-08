@@ -1,5 +1,8 @@
 <template>
-    <button :class="['button', styleButtonType, styleButtonisBlock]" :disabled="disabled">
+    <button
+        :class="['button', styleButtonType, styleButtonSize, styleButtonDisplay, transparent && '--transparent', circle && '--circle']"
+        :disabled="disabled"
+    >
         <slot/>
     </button>
 </template>
