@@ -8,17 +8,11 @@ import { withNotes } from '@storybook/addon-notes'
 // component
 import Label from '@/components/Atoms/Label'
 
-// stories - Usage
+// stories - Demo
 storiesOf('Atoms/Label', module)
   .addDecorator(VueInfoAddon)
   .addDecorator(withKnobs)
-  .add(
-    'Usage',
-    withNotes(
-      `
-      これはラベルのコンポーネントです。
-    `
-    )(() => {
+  .add('Demo', withNotes(`これはラベルのコンポーネントです。`)(() => {
       // knobs setting - type
       const typeLabel = 'type'
       const typeDefault = 'default'

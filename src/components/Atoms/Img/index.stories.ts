@@ -8,15 +8,11 @@ import { withNotes } from '@storybook/addon-notes'
 // StoryComponent
 import Img from '@/components/Atoms/Img'
 
-// Usage
+// Demo
 storiesOf('Atoms/Img', module)
   .addDecorator(VueInfoAddon)
   .addDecorator(withKnobs)
-  .add('Usage', withNotes(
-    `
-      sample text
-    `
-  )(() => {
+  .add('Demo', withNotes(`sample text`)(() => {
     const src = text('src', 'https://jungle-time.com/wp-content/uploads/2018/03/red-fox-2230730_1280.jpg')
     const alt =  text('alt', '画像のAltテキスト')
     const title =  text('title', '画像のタイトル')

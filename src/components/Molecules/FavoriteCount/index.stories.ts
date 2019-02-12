@@ -8,26 +8,18 @@ import { withNotes } from '@storybook/addon-notes'
 // component
 import FavoriteCount from '@/components/Molecules/FavoriteCount'
 
-// stories - Usage
+// stories - Demo
 storiesOf('Molecules/FavoriteCount', module)
   .addDecorator(VueInfoAddon)
   .addDecorator(withKnobs)
-  .add(
-    'Usage',
-    withNotes(
-      `
-      これはボタンのコンポーネントです。
-      クリック時に何らかの処理を開始する機能をユーザーに提供する最小コンポーネントです。
-    `
-    )(() => {
-      const txt = text(
-        'text',
-        `100`,
-      )
-      return {
-        components: { FavoriteCount },
-        template: `<FavoriteCount>${txt}</FavoriteCount>`,
-        methods: { action: action('button-clicked') },
-      }
-    })
-  )
+  .add('Demo', withNotes(`sample text`)(() => {
+    const txt = text(
+      'text',
+      `100`,
+    )
+    return {
+      components: { FavoriteCount },
+      template: `<FavoriteCount>${txt}</FavoriteCount>`,
+      methods: { action: action('button-clicked') },
+    }
+  }))

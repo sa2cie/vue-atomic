@@ -4,11 +4,11 @@ import Button from '@/components/Atoms/Button'
 
 @Component({
   components: {
-      Icon,
-      Button,
+    Icon,
+    Button,
   }
 })
 export default class ExitButton extends Vue {
   // Props
-  @Prop({ type: Function, default: () => {} }) private click!: void
+  @Prop({ type: Function, default: () => true }) private click!: void
 }

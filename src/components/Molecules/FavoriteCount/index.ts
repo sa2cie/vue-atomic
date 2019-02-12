@@ -4,10 +4,8 @@ import Txt from '@/components/Atoms/Txt'
 
 @Component({
   components: {
-      Icon,
-      Txt,
+    Icon,
+    Txt,
   }
 })
-export default class FavoriteCount extends Vue {
-  // Props
-}
+export default class FavoriteCount extends Vue { }

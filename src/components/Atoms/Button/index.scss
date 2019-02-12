@@ -1,20 +1,27 @@
+/* ===================
+Button
+=================== */
 .button {
   display: inline-block;
+  margin: 0;
+  box-sizing: border-box;
+  border: 1px solid #dcdfe6;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 500;
   line-height: 1;
   white-space: nowrap;
+  outline: none;
+  transition: .3s;
   cursor: pointer;
   -webkit-appearance: none;
-  text-align: center;
-  box-sizing: border-box;
-  outline: none;
-  margin: 0;
-  transition: .1s;
-  font-weight: 500;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  border: 1px solid #dcdfe6;
-  border-radius: 4px;
+
+  &:hover {
+    opacity: 0.7;
+  }
 
   /* ===================
   Button - Size
@@ -35,7 +42,7 @@
   }
 
   /* ===================
-  Button - Theme
+  Button - Type
   =================== */
   &.--default {
     background: #fff;
@@ -44,15 +51,15 @@
   }
 
   &.--primary {
-    color: #fff;
     background-color: #409eff;
     border-color: #409eff;
+    color: #fff;
   }
 
   &.--success {
+    background-color: #1cbdb4;
+    border-color: #1cbdb4;
     color: #fff;
-    background-color: #1CBDB4;
-    border-color: #1CBDB4;
   }
 
   &.--info {
@@ -73,6 +80,9 @@
     border-color: #f56c6c;
   }
 
+  /* ===================
+  Button - Circle
+  =================== */
   &.--circle {
     border: none;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
@@ -80,21 +90,58 @@
     height: 32px;
     border-radius: 50%;
     padding: 0;
+
+    &:hover,
+    &:active {
+      opacity: 0.9;
+      box-shadow: none;
+    }
   }
 
+  /* ===================
+  Button - Transparent
+  =================== */
   &.--transparent {
     border: none;
     background-color: transparent;
 
+    &.--small {
+      padding: 2px 6px;
+    }
+
     &.--medium {
       padding: 3px 8px;
+
+    }
+
+    &.--large {
+      padding: 4px 10px;
+    }
+
+    &.--primary {
+      color: #409eff;
     }
 
     &.--success {
-      color: #1CBDB4;
+      color: #1cbdb4;
+    }
+
+    &.--info {
+      color: #909399;
+    }
+
+    &.--warning {
+      color: #e6a23c;
+    }
+
+    &.--alert {
+      color: #f56c6c;
     }
   }
-  
+
+  /* ===================
+  Button - Display
+  =================== */
   &.--inline {
     display: inline;
   }
@@ -107,7 +154,11 @@
     display: block;
   }
 
+  /* ===================
+  Button - Disable
+  =================== */
   &:disabled {
     opacity: 0.5;
+    pointer-events: none;
   }
 }

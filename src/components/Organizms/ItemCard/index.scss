@@ -1,15 +1,15 @@
 
 .itemCard {
-	background: #FFFFFF;
-	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.20); 
+  background: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.20);
 
-	&__content {
-		position: relative;
-	}
+  &__content {
+    position: relative;
+  }
 
-	&__favoriteButton {
-		top: -16px;
-		right: 8px;
-		position: absolute;
-	}
+  &__favoriteButton {
+    top: -16px;
+    right: 8px;
+    position: absolute;
+  }
 }

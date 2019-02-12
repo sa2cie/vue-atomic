@@ -13,6 +13,6 @@ export default class SearchForm extends Vue {
   @Prop({ type: String }) private name!: string
   @Prop({ type: String }) private value!: string
   @Prop({ type: String }) private placeholder!: string
-  @Prop({ type: Function }) private onChange!: (event : Event) => {}
-  @Prop({ type: Function }) private onSubmit!: (event : Event) => {}
+  @Prop({ type: Function }) private onChange!: (event: Event) => {}
+  @Prop({ type: Function }) private onSubmit!: (event: Event) => {}
 }

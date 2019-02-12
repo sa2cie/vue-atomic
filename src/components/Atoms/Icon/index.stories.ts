@@ -8,18 +8,11 @@ import { withNotes } from '@storybook/addon-notes'
 // component
 import Icon from '@/components/Atoms/Icon'
 
-// stories - Usage
+// stories - Demo
 storiesOf('Atoms/Icon', module)
   .addDecorator(VueInfoAddon)
   .addDecorator(withKnobs)
-  .add(
-    'Usage',
-    withNotes(
-      `
-      これはアイコンのコンポーネントです。
-      何らかのシンボルを表示する機能をユーザーに提供する最小コンポーネントです。
-    `
-    )(() => {
+  .add('Demo', withNotes(`これはアイコンのコンポーネントです。何らかのシンボルを表示する機能をユーザーに提供する最小コンポーネントです。`)(() => {
       // knobs setting - type
       const typeLabel = 'type'
       const typeDefault = 'default'

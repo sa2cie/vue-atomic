@@ -4,8 +4,8 @@ import Label from '@/components/Atoms/Label'
 
 @Component({
   components: {
-      Img,
-      Label,
+    Img,
+    Label,
   }
 })
 export default class ItemThumb extends Vue {

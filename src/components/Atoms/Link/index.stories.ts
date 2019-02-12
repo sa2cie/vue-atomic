@@ -8,17 +8,11 @@ import { withNotes } from '@storybook/addon-notes'
 // StoryComponent
 import Link from '@/components/Atoms/Link'
 
-// Usage
+// Demo
 storiesOf('Atoms/Link', module)
   .addDecorator(VueInfoAddon)
   .addDecorator(withKnobs)
-  .add(
-    'Usage',
-    withNotes(
-      `
-      sample text
-      `
-    )(() => {
+  .add('Demo', withNotes(`sample text`)(() => {
       const slot = text('slot', 'リンクテキスト')
       const url = text('url', '//www.google.co.jp/')
       const blank = boolean('blank', false)

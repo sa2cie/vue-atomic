@@ -11,15 +11,27 @@ export default class Button extends Vue {
   @Prop({ type: Boolean, default: false }) private circle!: boolean
 
   // TODO:
-  get styleButtonType() {
-    return `--${this.type}`
+  private getModifierClass(name: string): string {
+    return name === '' ? '' : `--${name}`
   }
   // TODO:
-  get styleButtonDisplay() {
-    return `--${this.display}`
+  get styleButtonType(): string {
+    return this.getModifierClass(this.type)
   }
   // TODO:
-  get styleButtonSize() {
-    return `--${this.size}`
+  get styleButtonDisplay(): string {
+    return this.getModifierClass(this.display)
+  }
+  // TODO:
+  get styleButtonSize(): string {
+    return this.getModifierClass(this.size)
+  }
+  // TODO:
+  get styleButtonTransparent(): string {
+    return this.getModifierClass(this.transparent ? 'transparent' : '')
+  }
+  // TODO:
+  get styleButtonCircle(): string {
+    return this.getModifierClass(this.circle ? 'circle' : '')
   }
 }

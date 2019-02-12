@@ -8,25 +8,17 @@ import { withNotes } from '@storybook/addon-notes'
 // component
 import ExitButton from '@/components/Molecules/ExitButton'
 
-// stories - Usage
+// stories - Demo
 storiesOf('Molecules/ExitButton', module)
   .addDecorator(VueInfoAddon)
   .addDecorator(withKnobs)
-  .add(
-    'Usage',
-    withNotes(
-      `
-      これはボタンのコンポーネントです。
-      クリック時に何らかの処理を開始する機能をユーザーに提供する最小コンポーネントです。
-    `
-    )(() => {
-      return {
-        components: { ExitButton },
-        template: `<ExitButton :click="action" />`,
-        methods: { action: action('button-clicked') },
-        propsDescription: {
-          click: 'ボタンを押した時に発生するイベント',
-        },
-      }
-    })
-  )
+  .add('Demo', withNotes('sample text')(() => {
+    return {
+      components: { ExitButton },
+      template: `<ExitButton :click="action" />`,
+      methods: { action: action('button-clicked') },
+      propsDescription: {
+        click: 'ボタンを押した時に発生するイベント',
+      },
+    }
+  }))
