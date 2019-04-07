@@ -1,5 +1,4 @@
-# Vue.js Base Project
-Vue.jsの学習用に作成した開発環境
+# Vue + Storybook
 
 ## プロジェクトのセットアップ
 ```
